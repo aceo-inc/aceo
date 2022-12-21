@@ -1,28 +1,22 @@
 const navbar = props => (
-  <nav class="navbar bg-light">
-    <form class="container-fluid">
-      <h2 class="justify-content-start">ACEO</h2>
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">
-            Active
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            Link
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            Link
-          </a>
-        </li>
-      </ul>
-      <button class="btn btn-warning btn-lg justify-content-end" type="button">
-        Try ACEO for free
-      </button>
-    </form>
+  <nav class="navbar bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fs-1">ACEO</a>
+      <form class="d-flex justify-content-between" role="search">
+        <button type="button" class="btn btn-warning mx-2 fs-8">
+          Try ACEO for free
+        </button>
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success btn-sm" type="submit">
+          Search
+        </button>
+      </form>
+    </div>
   </nav>
 );
 
