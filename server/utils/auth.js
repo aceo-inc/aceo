@@ -1,7 +1,8 @@
-// I've left this in to use, because it's good boilerplate code. If we use Oauth we'll need to remove this.
+// I've left this in to use, because it's good boilerplate code.
 
+require("dotenv").config();
 const jwt = require("jsonwebtoken");
-const secret = "mysecretssshhhhhhh";
+const secret = process.env.SECRET;
 const expiration = "2h";
 
 module.exports = {
