@@ -12,6 +12,7 @@ const choiceSchema = new Schema({
 		type: String,
 		required: false,
 	},
+	// product unique ID number, used for locating in a supplier's database
 	sku: {
 		type: String,
 		required: false,
@@ -20,10 +21,12 @@ const choiceSchema = new Schema({
 		type: Number,
 		required: true,
 	},
-	ordered: {
-		type: Boolean,
-		required: false,
+	// ordered, on site, installed, awaiting final approval, etc.
+	status: {
+		type: String,
+		required: true,
 	},
+	// used for things that need a color, otherwise can be left blank
 	color: {
 		type: String,
 		required: false,

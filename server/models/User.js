@@ -62,10 +62,16 @@ const userSchema = new Schema(
 		// a Map type can store a variety of different contact types, such has phone number and email, instead of having them as keys.
 		// WARNING: You need to use .get() to get the value of a key and .set() to set the value of a key with a Map type.
 		// https://mongoosejs.com/docs/schematypes.html#maps
-		contact: {
+		contactInfo: {
 			type: Map,
 			of: String,
 		},
+		contacts: [
+			{
+				type: Schema.Types.ObjectId,
+				ref: "User",
+			},
+		],
 	},
 	{
 		virtuals: {
