@@ -11,6 +11,10 @@ const typeDefs = gql`
 		contactInfo: [String]
 		contacts: [User]
 	}
+
+	type Query {
+		users: [User]
+	}
 `;
 
 module.exports = typeDefs;
