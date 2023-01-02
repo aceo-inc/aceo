@@ -8,7 +8,21 @@ const resolvers = {
 			return User.find({});
 		},
 	},
-	// Mutation: {},
+	Mutation: {
+		createUser: async (parent, { name, email, password, gender, role, description, contactInfo, contacts }) => {
+			const user = await user.create({
+				name,
+				email,
+				password,
+				gender,
+				role,
+				description,
+				contactInfo,
+				contacts,
+			});
+			return { user };
+		},
+	},
 };
 
 module.exports = resolvers;
