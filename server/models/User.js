@@ -4,32 +4,30 @@ const bcrypt = require("bcrypt");
 // This is a basic model for the user. Uses bcrypt to salt the password. A description is mostly for the Engineer, Contractor and Architect.
 const userSchema = new Schema(
 	{
-		name: {
-			prefix: {
-				type: String,
-				required: false,
-				trim: true,
-			},
-			first: {
-				type: String,
-				required: true,
-				trim: true,
-			},
-			middle: {
-				type: String,
-				required: true,
-				trim: true,
-			},
-			last: {
-				type: String,
-				required: true,
-				trim: true,
-			},
-			suffix: {
-				type: String,
-				required: false,
-				trim: true,
-			},
+		prefix: {
+			type: String,
+			required: false,
+			trim: true,
+		},
+		firstName: {
+			type: String,
+			required: true,
+			trim: true,
+		},
+		middleName: {
+			type: String,
+			required: false,
+			trim: true,
+		},
+		lastName: {
+			type: String,
+			required: true,
+			trim: true,
+		},
+		suffix: {
+			type: String,
+			required: false,
+			trim: true,
 		},
 		email: {
 			type: String,
