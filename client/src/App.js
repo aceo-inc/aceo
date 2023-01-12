@@ -5,19 +5,19 @@ import { Route, Routes } from "react-router-dom";
 
 // We import all the components we need in our app
 import Homepage from "./pages/homepage";
-import NavBar from "./components/navBar.jsx";
-import Footer from "./components/footer";
+import NavBar from "./components/NavBar.jsx";
+import Footer from "./components/Footer";
 
 function App() {
-	return (
-		<div className="App">
-			<NavBar></NavBar>
-			<header className="App-header">
-				<Homepage></Homepage>
-			</header>
-			<Footer />
-		</div>
-	);
+  return (
+    <div className="App">
+      <NavBar></NavBar>
+      <header className="App-header">
+        <Homepage></Homepage>
+      </header>
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

@@ -1,5 +1,5 @@
 import { FiSearch } from "react-icons/fi";
-import { RxDropdownMenu } from "react-icons/rx";
+import { IoIosArrowDropdownCircle } from "react-icons/io";
 
 const navbar = props => (
   <nav class="navbar h-auto bg-light">
@@ -22,14 +22,14 @@ const navbar = props => (
         />
 
         <button class="btn btn-outline-warning" type="submit">
-          <FiSearch />
+          <FiSearch size={20} />
         </button>
-        <button
-          type="button"
-          class="btn btn-primary mx-2 fs-6 h-50 fa-3x btn-sm w-25 p-2"
-        >
-          <RxDropdownMenu class="fa-3x" />
+        <button class="mx-2 w-50">
+          <h5>Log in</h5>
         </button>
+        <h2 type="button" class="btn btn-primary w-25 p-2">
+          <IoIosArrowDropdownCircle size={20} class="fa-3x" />
+        </h2>
       </form>
     </div>
   </nav>
